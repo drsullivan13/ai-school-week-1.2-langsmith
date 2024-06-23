@@ -1,6 +1,6 @@
 from langchain_openai import ChatOpenAI
-from langsmith.wrappers import wrap_openai
-from langsmith import traceable
+from langsmith.wrappers import wrap_openai #wrap_openai is a function that can wrap an LLM to add Langsmith tracing
+from langsmith import traceable #traceable is a decorator that can be used to add Langsmith tracing to a function
 import os
 from dotenv import load_dotenv
 

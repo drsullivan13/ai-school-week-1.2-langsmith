@@ -10,7 +10,7 @@ os.environ["LANGFUSE_SECRET_KEY"] = os.getenv("LANGFUSE_SECRET_KEY")
 os.environ["LANGFUSE_PUBLIC_KEY"] = os.getenv("LANGFUSE_PUBLIC_KEY")
 os.environ["LANGFUSE_HOST"] = os.getenv("LANGFUSE_HOST")
  
-@observe()
+@observe() #the observe decorator will log the function's inputs and outputs to Langfuse
 def story():
     return openai.chat.completions.create(
         model="gpt-3.5-turbo",

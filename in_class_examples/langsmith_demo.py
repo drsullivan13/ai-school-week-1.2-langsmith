@@ -22,5 +22,5 @@ def pipeline(user_input: str):
        model="gpt-3.5-turbo")
    return result.choices[0].message.content
 
-print(pipeline("Hello, world!"))
+print(pipeline("Hello, folks!!"))
 # Out:  Hello there! How can I assist you today?
